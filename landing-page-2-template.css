@@ -2,59 +2,68 @@
     grid-area: header;
     border: red solid 1px;
     border-radius: 5px;
-  }
-  .content {
+    font-size: 40px;
+    text-align: center;
+    padding: 3%;
+}
+
+.content {
     grid-area: content;
     border: red solid 1px;
     border-radius: 5px;
+    padding: 4%;
+    background: hsla(120, 10%, 10%, 0.8)
+  
+}
 
-  }
-  .main-nav {
+.main-nav {
     grid-area: nav;
     border: red solid 1px;
     border-radius: 5px;
+   
+}
 
-  }
-  .side {
+.side {
     grid-area: sidebar;
     border: red solid 1px;
     border-radius: 5px;
+}
 
-  }
-  .ad {
+.ad {
     grid-area: ad;
     border: red solid 1px;
     border-radius: 5px;
+}
 
-  }
-  .main-footer {
+.main-footer {
     grid-area: footer;
     border: red solid 1px;
     border-radius: 5px;
+}
 
-  }
 
-  .wrapper {
+.wrapper {
     display: grid;
-    grid-gap: 20px;
-    grid-template-areas: 
-      "header"
-      "nav"
-      "content"
-      "sidebar"
-      "ad"
-      "footer";
-  }
+    grid-gap: 10px;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-areas: "header header  header" "nav nav nav" "content    content sidebar" "content    content ad" "footer footer  footer";
+    background: hsla(120, 10%, 10%, 0.3)
+}
 
-  .wrapper {
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: 
-      "header header  header"
-      "nav nav nav"
-      "content    content sidebar"
-      "content    content ad"
-      "footer footer  footer"
-   }
-   nav ul {
-     flex-direction: column;
-   }
+ nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+p{
+    width: 70%;
+   
+    margin: auto;
+}

@@ -12,15 +12,13 @@
     border: red solid 1px;
     border-radius: 5px;
     padding: 4%;
-    background: hsla(120, 10%, 10%, 0.8)
-  
+    background: url("");
 }
 
 .main-nav {
     grid-area: nav;
     border: red solid 1px;
     border-radius: 5px;
-   
 }
 
 .side {
@@ -39,31 +37,48 @@
     grid-area: footer;
     border: red solid 1px;
     border-radius: 5px;
+    padding: 3%;
 }
 
+.footer-social {
+    grid-area: social;
+    border: red solid 1px;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+.footer-contact {
+    grid-area: contact;
+    border: red solid 1px;
+    border-radius: 5px;
+    padding: 3%;
+}
 
 .wrapper {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 2fr 3fr 1fr;
-    grid-template-areas: "header header  header" "nav nav nav" "content    content sidebar" "content    content ad" "footer footer  footer";
-    background: hsla(120, 10%, 10%, 0.3)
+    grid-gap: 5px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "header header  header" "nav nav nav" "content    content sidebar" "content    content ad" "contact  footer  social";
+    background: hsla(120, 10%, 10%, 0);
+    font-family: 'Montserrat', sans-serif;
 }
 
- nav ul {
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  
 }
 
 h1 {
     font-size: 80px;
     text-align: center;
+    color: lime;
 }
 
-p{
+p {
     width: 70%;
-   
+    line-height: 1.5;
     margin: auto;
+    
+    font-weight: bold;
 }
